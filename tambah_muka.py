@@ -24,14 +24,19 @@ while(ret):
             faces = frame[b:b+h, a:a+w, :]
             resized_faces = cv2.resize(faces, (50, 50))
 
-            if i % 10 == 0 and len(face_data) < 20:
+            if i % 10 == 0 and len(face_data) < 100:
                 face_data.append(resized_faces)
             cv2.rectangle(frame, (a, b), (a+w, b+h), (255, 0, 0), 2)
         i += 1
 
         cv2.imshow('frames', frame)
-        print(f"Jumlah data yang diambil: {i}")
-        if cv2.waitKey(1) == 27 or len(face_data) >= 20:
+        print(f"Jumlah data yang diambil: {len(face_data)}")
+
+        key_pressed = cv2.waitKey(1) & 0xFF
+        if key_pressed == ord('q'):
+            break
+
+        if cv2.waitKey(1) == 27 or len(face_data) >= 100:
             break
     else:
         print('error')
