@@ -37,7 +37,7 @@ for file_name in user_files:
                 print(f"Error loading data from file {file_name}: {str(e)}")
 
 # Inisialisasi KNN
-knn = KNeighborsClassifier(n_neighbors=4)
+knn = KNeighborsClassifier(n_neighbors=3)
 
 # Mengumpulkan data wajah dan nama dari semua pengguna
 all_faces = []
