@@ -1,4 +1,4 @@
-# Facial Recognition System for Class Attendance and Door Lock Control
+# Facial Recognition System for Class Attendance
 
 ## Installation
 
@@ -24,10 +24,3 @@ pip3 install -U scikit-learn
 | seaborn       | 0.9.0           | docs, examples                   |
 
 ```
-
-## Contributing
-
-Thanks to samarthpandeydev, for the Attendance system.
-
-Attendance System Original Code:
-github.com/samarthpandeydev/Face-Recognition-Attendance-System/tree/main
