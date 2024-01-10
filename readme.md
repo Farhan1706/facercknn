@@ -1,4 +1,4 @@
-# Facial Recognition System for Class Attendance and Door Lock Control
+# Facial Recognition System for Class Attendance
 
 ## Installation
 
